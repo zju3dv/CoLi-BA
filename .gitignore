@@ -1,0 +1,7 @@
+.vscode
+.idea
+bin
+cmake-build-*
+build
+lib
+3rdparty
