@@ -41,20 +41,20 @@ sudo make install
 
 Install [g2o](https://github.com/RainerKuemmerle/g2o)
 ```shell
-git clone git@github.com:RainerKuemmerle/g2o.git
+git clone https://github.com/RainerKuemmerle/g2o.git
 cd g2o
-mkdir build & cd build
-cmake .. & make -j4 &sudo make install 
+mkdir build && cd build
+cmake .. && make -j4 &&sudo make install 
 ```
 
 Compile CoLi-BA
 ```shell
-git clone --recursive git@github.com:oneLOH/MGBA.git
-cd ceres-solver
-mkdir build & cd build
-cmake .. & make -j4 &sudo make install
+git clone --recursive https://github.com/zju3dv/CoLi-BA.git
+cd CoLi-BA/ceres-solver
+mkdir build && cd build
+cmake .. && make -j4 &&sudo make install
 cd ../../
-mkdir build & cd build
+mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j4
 ```
