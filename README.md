@@ -33,10 +33,8 @@ Install [eigen](https://gitlab.com/libeigen/eigen.git)
 ```shell
 git clone https://gitlab.com/libeigen/eigen.git
 cd eigen
-mkdir build 
-cd build
-cmake .. 
-sudo make install 
+mkdir build && cd build
+cmake .. && sudo make install 
 ```
 
 Install [g2o](https://github.com/RainerKuemmerle/g2o)
@@ -52,7 +50,7 @@ Compile CoLi-BA
 git clone --recursive https://github.com/zju3dv/CoLi-BA.git
 cd CoLi-BA/ceres-solver
 mkdir build && cd build
-cmake .. && make -j4 &&sudo make install
+cmake .. && make -j4 && sudo make install
 cd ../../
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
