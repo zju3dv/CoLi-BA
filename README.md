@@ -70,11 +70,18 @@ make -j4
     └── points3D.bin
     ```
 
-
 3. Run the following command to solve the BA problems:
     ```
-    ./bin/main /data/path/ coli
+    ./bin/main coli /data/path/ 
     ```
+
+4. Run the following command to evaluate on [test data](https://1drv.ms/u/s!AteiIkLvFJ3rhkOyieVNtJqglN_h?e=0deoiI)(KITTI and 1DSfM):
+    ```
+    python3 ./run_compare.py --data_path=/data1/test_data/ --method=coli
+    ```
+    You can also evaluate other methods. We currently provide ceres and g2o.
+
+
 
 ## Citation
 ```bibtex

@@ -62,7 +62,7 @@ void LMMinimizer::solve_problem() {
     double step_quality = solver.relative_decrease_;
     StepAccepted(step_quality);
   }
-  solver.log();
+  // solver.log();
 }
 
 void LMMinimizer::StepRejected(double step_quality) {

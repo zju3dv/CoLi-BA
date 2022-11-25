@@ -181,7 +181,6 @@ class CrossTangentOld : public ceres::SizedCostFunction<2, 4, 3, 3> {
   Eigen::Matrix3d local_tangent;
 };
 
-
 class EigenQuatParam : public ceres::LocalParameterization {
  public:
   bool Plus(const double *x, const double *delta, double *x_plus_delta) const override {
